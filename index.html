@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peng Han - Personal Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+        
+        .contact-info a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        section {
+            background: white;
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .education-item, .project-item, .experience-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .education-item:last-child, .project-item:last-child, .experience-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .institution {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #2980b9;
+        }
+        
+        .location {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .duration {
+            float: right;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .major {
+            margin: 5px 0;
+            font-weight: 500;
+        }
+        
+        .details {
+            margin-top: 10px;
+        }
+        
+        .details li {
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #27ae60;
+        }
+        
+        .project-tech {
+            color: #7f8c8d;
+            font-style: italic;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .skill-category p {
+            color: #555;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .duration {
+                float: none;
+                display: block;
+                margin-top: 5px;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Peng Han</h1>
+            <div class="contact-info">
+                <span>📱 (+65) 8941-9417</span> | 
+                <span>✉️ <a href="mailto:peng0185@e.ntu.edu.sg">peng0185@e.ntu.edu.sg</a></span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="education">
+            <h2>Education</h2>
+            
+            <div class="education-item">
+                <div class="institution">Nanyang Technological University <span class="location">Singapore</span></div>
+                <div class="duration">Aug. 2024 – Present</div>
+                <div class="major">Majoring in Signal Processing and Machine Learning</div>
+                <ul class="details">
+                    <li>CGPA: 5.0/5.0</li>
+                    <li>Relevant Coursework: Machine Vision, Video Signal Processing, Analytic and Ensemble Learning</li>
+                </ul>
+            </div>
+            
+            <div class="education-item">
+                <div class="institution">Wuhan University <span class="location">Wuhan, China</span></div>
+                <div class="duration">Sep. 2020 – June. 2024</div>
+                <div class="major">Majoring in Communication Engineering</div>
+                <ul class="details">
+                    <li>CGPA: 3.6/4.0</li>
+                    <li>Relevant Coursework: Digital Image Processing (94/100), Speech Signal Processing (92/100)</li>
+                    <li>Exchange Experience (Jan. 2024 – Jun. 2024): Nanyang Technological University (CGPA: 4.9/5.0)</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <div class="project-item">
+                <div class="project-title">Zero-Shot Skeleton-based Action Recognition <span class="project-tech">| Skeleton</span></div>
+                <div class="duration">Sep. 2024 – March. 2025</div>
+                <ul class="details">
+                    <li>Developed a novel framework using Variational Autoencoders (VAEs) to disentangle skeleton features, enhancing semantic-visual alignment.</li>
+                    <li>Transformed raw skeleton data into semantically meaningful body-part features with multiple partition strategies. Leveraged LLMs to generate detailed part descriptions from action labels.</li>
+                    <li>Designed a computationally efficient MLP ensemble architecture that achieved 4.2% higher accuracy than state-of-the-art methods under challenging zero-shot learning splits on NTU60 and NTU120 Datasets.</li>
+                </ul>
+            </div>
+            
+            <div class="project-item">
+                <div class="project-title">Multi-modal Distillation of Egocentric Video Understanding <span class="project-tech">| Video</span></div>
+                <div class="duration">Jan. 2024 – May. 2024</div>
+                <ul class="details">
+                    <li>Applied multimodal KD on FPHA and H2O datasets by matching logits. Trained the Swin-T teacher model by RGB and optical flow, while Swin-T, ResNet18, and ResNet50 served as student models.</li>
+                    <li>Optimized the baseline KD by Transformed Teacher Matching (TTM), which converted student-side balancing parameter adjustments into equivalent teacher-side adjustments.</li>
+                </ul>
+            </div>
+            
+            <div class="project-item">
+                <div class="project-title">Aesthetic Evaluation of Works of Art Based on Image Features <span class="project-tech">| Image</span></div>
+                <div class="duration">Aug. 2021 – Feb. 2023</div>
+                <ul class="details">
+                    <li>Built the extended dataset. Selected 4,000 borderless pictures of suitable size and definition from the landscape paintings. 110,163 annotations were collected from campus questionnaires.</li>
+                    <li>Fused deep CNN features with reference-free statistical features generated from Blind/Referenceless Image Spatial Quality Evaluator (BRISQUE).</li>
+                    <li>Compared VGG19, ResNet152, and CLIP, highlighting the BRISQUE-optimized CLIP model. Segmentation correctness reached 93%, with overall correctness at 81%.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="experiences">
+            <h2>Experiences</h2>
+            
+            <div class="experience-item">
+                <div class="project-title">Lifelong Learning Club | Vice President</div>
+                <div class="duration">Aug. 2024 – Present</div>
+                <ul class="details">
+                    <li>Organized "Mutual Helping Seminar" and "English Corner" occasionally.</li>
+                    <li>Wrote event proposals and designed the posters. Communicated with other organizations and companies.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="project-title">Office of International Affairs | Student Assistant</div>
+                <div class="duration">Feb. 2023 – June. 2024</div>
+                <ul class="details">
+                    <li>Managed CSC program and Asian inter-school exchange projects. Edited official public account tweets. Provided point-to-point services to more than 50 students, covering over 300 students in total.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Language</h3>
+                    <p>IELTS score of 7.5</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <p>Python, Matlab, C, C#, LATEX</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Development Platform</h3>
+                    <p>VS Code, Jupyter Notebook, Google Colab, Matlab, Visual Studio, PyCharm</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
